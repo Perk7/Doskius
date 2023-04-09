@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Doskius/static/css/main.52e6d5ea.css",
-    "main.js": "/Doskius/static/js/main.f6df022c.js",
+    "main.js": "/Doskius/static/js/main.6fdf7705.js",
     "static/js/787.869de754.chunk.js": "/Doskius/static/js/787.869de754.chunk.js",
     "static/media/mic.png": "/Doskius/static/media/mic.010a14f23dd97ae033f2.png",
     "static/media/notea.png": "/Doskius/static/media/notea.6fa3ebc45b3e42136f34.png",
@@ -10,11 +10,11 @@
     "static/media/play.svg": "/Doskius/static/media/play.6247b2fc73279469beae.svg",
     "index.html": "/Doskius/index.html",
     "main.52e6d5ea.css.map": "/Doskius/static/css/main.52e6d5ea.css.map",
-    "main.f6df022c.js.map": "/Doskius/static/js/main.f6df022c.js.map",
+    "main.6fdf7705.js.map": "/Doskius/static/js/main.6fdf7705.js.map",
     "787.869de754.chunk.js.map": "/Doskius/static/js/787.869de754.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52e6d5ea.css",
-    "static/js/main.f6df022c.js"
+    "static/js/main.6fdf7705.js"
   ]
 }
