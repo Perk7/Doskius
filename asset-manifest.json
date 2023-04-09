@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.0427a6b4.css",
-    "main.js": "/static/js/main.64942330.js",
-    "static/js/787.869de754.chunk.js": "/static/js/787.869de754.chunk.js",
-    "static/media/mic.png": "/static/media/mic.010a14f23dd97ae033f2.png",
-    "static/media/notea.png": "/static/media/notea.6fa3ebc45b3e42136f34.png",
-    "static/media/tracks.jpg": "/static/media/tracks.1d211e97b79595e5a217.jpg",
-    "static/media/artists.jpg": "/static/media/artists.9b4f56deacfbab35330e.jpg",
-    "static/media/play.svg": "/static/media/play.6247b2fc73279469beae.svg",
-    "index.html": "/index.html",
-    "main.0427a6b4.css.map": "/static/css/main.0427a6b4.css.map",
-    "main.64942330.js.map": "/static/js/main.64942330.js.map",
-    "787.869de754.chunk.js.map": "/static/js/787.869de754.chunk.js.map"
+    "main.css": "/Doskius/static/css/main.52e6d5ea.css",
+    "main.js": "/Doskius/static/js/main.901b77da.js",
+    "static/js/787.869de754.chunk.js": "/Doskius/static/js/787.869de754.chunk.js",
+    "static/media/mic.png": "/Doskius/static/media/mic.010a14f23dd97ae033f2.png",
+    "static/media/notea.png": "/Doskius/static/media/notea.6fa3ebc45b3e42136f34.png",
+    "static/media/tracks.jpg": "/Doskius/static/media/tracks.1d211e97b79595e5a217.jpg",
+    "static/media/artists.jpg": "/Doskius/static/media/artists.9b4f56deacfbab35330e.jpg",
+    "static/media/play.svg": "/Doskius/static/media/play.6247b2fc73279469beae.svg",
+    "index.html": "/Doskius/index.html",
+    "main.52e6d5ea.css.map": "/Doskius/static/css/main.52e6d5ea.css.map",
+    "main.901b77da.js.map": "/Doskius/static/js/main.901b77da.js.map",
+    "787.869de754.chunk.js.map": "/Doskius/static/js/787.869de754.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0427a6b4.css",
-    "static/js/main.64942330.js"
+    "static/css/main.52e6d5ea.css",
+    "static/js/main.901b77da.js"
   ]
 }
