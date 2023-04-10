@@ -1,0 +1,70 @@
+.navblock
+    &__container 
+        padding: 4rem 0
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+
+    &__item
+        height: 25rem
+        width: 17rem
+        
+        box-shadow: 6px 6px #989898, 12px 12px #6c6666    
+        transition: 1s
+
+        filter: grayscale(100%) 
+
+        &__link
+            display: flex
+            height: 100%
+            width: 100%
+            align-items: flex-end
+            justify-content: center
+
+            text-decoration: none
+            color: #FFF
+            text-transform: uppercase
+            font-weight: 600
+            font-size: 2rem
+            box-shadow: 0 0 60px rgba(0, 0, 0, .9) inset
+
+            span
+                display: inline-block
+                background: linear-gradient(to top, #000d 25%, #000b 50%, #0000 100%)
+                padding: 4rem 0 1.5rem
+                width: 100%
+
+        &:first-child
+            background-image: url(../../../public/Navbar/artists.jpg)
+            background-size: cover
+        
+        &:last-child
+            background-image: url(../../../public/Navbar/tracks.jpg)
+            background-size: cover
+
+        &:hover
+            transform: scale(1.2)
+            filter: grayscale(0%) 
+
+@media (max-width: 650px) 
+
+    .navblock
+        &__container 
+            padding-top: 15rem
+            justify-content: space-between
+
+        &__item
+            width: 49%
+            height: 70rem
+            
+            box-shadow: none 
+            transition: 1s
+
+            filter: none
+
+            &__link
+                font-size: 5rem
+                box-shadow: 0 0 70px rgba(0, 0, 0, .9) inset
+
+                span
+                    padding: 6rem 0 2.5rem

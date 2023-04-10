@@ -1,0 +1,83 @@
+.artists__
+    &list 
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        justify-content: space-around
+        justify-items: center
+        padding-bottom: 5rem
+
+    &item
+        width: 17rem
+        height: 25rem
+        border-radius: 0.5rem
+        display: flex
+        flex-direction: column-reverse
+        background-size: cover
+        box-shadow: 6px 6px #c0c0c0
+        transition: 1s
+        margin-top: 5rem
+        text-decoration: none
+        overflow: hidden
+
+        span
+            color: #fff
+            font-size: 1.5rem
+            padding: 2rem
+            background-color: #000c
+            
+        div
+            transform: translateX(-6rem) translateY(-8rem)
+            width: 28%
+            height: 15%
+            background-size: cover
+            background-image: url(../../../public/icons/mic.png)
+            transition: 1.5s
+
+        div.mic3
+            transform: translateX(-6rem) translateY(-4rem) scale(1.2)
+        
+        div.mic4
+            transform: translateX(-6rem) translateY(-10rem) scale(0.8)
+        
+        div.mic6
+            transform: translateX(-6rem) translateY(-3rem)
+        
+        div.mic7
+            transform: translateX(-6rem) translateY(-8rem) scale(0.8)
+        
+        &:hover
+            transform: scale(1.1)
+
+            div
+                transform: translateX(4rem) translateY(-6rem)
+
+            div.mic3
+                transform: translateX(4rem) translateY(-4rem) scale(1.2)
+
+            div.mic4
+                transform: translateX(2rem) translateY(-10rem) scale(0.8)
+            
+            div.mic6
+                transform: translateX(1rem) translateY(-3rem)
+
+            div.mic7
+                transform: translateX(3rem) translateY(-8rem) scale(0.8)
+
+@media (max-width: 650px) 
+    .artists__
+        &list 
+            grid-template-columns: repeat(2, 1fr)
+            padding-bottom: 15rem
+        
+        &item
+            width: 40rem
+            height: 60rem
+            border-radius: 2rem
+            box-shadow: 3px 3px #c0c0c0
+        
+            span
+                font-size: 4rem
+                padding: 3rem
+            
+            div
+                display: none
