@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Header/Header'
 import { useParams, Link } from 'react-router-dom';
 import './PageArtist.sass'
-import { artists, tracks } from '../../database';
+import { artists, tracks, getTracks } from '../../database';
 
 export default function PageArtist() {
   const params = useParams();
@@ -18,7 +18,7 @@ export default function PageArtist() {
         </div>
         <div className="page-artist__tracks">
             <span className="page-artist__main-title">Tracks</span>
-            {object.tracks.map(e => 
+            {getTracks(object.tracks).map(e => 
                 <div className='page-artist__track' key={e}>
                     <Link className='page-artist__track__link-block' to={`/track/${e}`}>
                         <img src={`../Tracks/${tracks[e].icon}`} alt="" className="page-artist__track__icon" />

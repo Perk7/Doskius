@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import Header from '../Header/Header'
 import "./Tracks.sass"
-import { tracks, artists } from '../../database'
+import { getTracks, tracks, artists } from '../../database'
 
 export default function Tracks() {
 
@@ -11,7 +11,7 @@ export default function Tracks() {
     <>
     <Header back />
     <section className="tracks__list">
-        {Object.keys(tracks).map(id =>
+        {getTracks(Object.keys(tracks)).map(id =>
         {
           const artist_list = tracks[id].artists.map(e => artists[e].name)
           return (
