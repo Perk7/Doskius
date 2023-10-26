@@ -1,0 +1,81 @@
+.artists__
+    &list 
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        justify-content: space-around
+        justify-items: center
+        padding-bottom: 5rem
+
+    &item__link
+        width: 17rem
+        height: 26rem
+        padding: 0.75rem 0
+        border-radius: 1rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        border: 1px solid #cccccc
+        transition: 0.8s
+        margin-top: 5rem
+        text-decoration: none
+        overflow: hidden
+        background-color: #a8a8a81e
+
+        img
+            width: 15.5rem
+            height: 19rem
+            border-radius: 1rem
+            object-fit: cover
+            transition: 1s
+
+        span
+            color: #fff
+            font-size: 1.65rem
+            font-weight: 600
+            padding: 2rem
+            
+        &:hover
+            transform: scale(1.1)
+            padding: 0 0 1rem
+            background-color: #a8a8a84b
+            box-shadow:  0 0 16px 7px #464646
+
+            img
+                width: 17rem
+                height: 21rem
+
+
+@media (max-width: 650px) 
+    .artists__
+        &list 
+            grid-template-columns: repeat(2, 1fr)
+            padding-bottom: 15rem
+   
+        &item__link
+            width: 40rem
+            height: 57.5rem
+            padding: 2.5rem 0 1rem
+            border-radius: 2rem
+            border: 0
+            box-shadow: 10px 10px 10px 5px #1d1d1d
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+            span
+                font-size: 4rem
+                padding: 3rem
+            
+            img
+                width: 36rem
+                height: 46rem
+
+            &:hover
+                height: 61rem
+                transform: scale(1.05)
+                padding: 0 0 1rem
+                background-color: #a8a8a84b
+                box-shadow: 2px 5px 10px 2px #464646
+                
+                img
+                    width: 40rem
+                    height: 50rem

@@ -1,0 +1,145 @@
+.page-artist__
+
+    &container 
+        display: grid
+        grid-template-columns: 40% 40%
+
+    
+    &photo
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 5rem
+        position: sticky
+        top: 40rem
+
+        img
+            width: 40%
+            border-radius: 1rem
+
+            box-shadow: 8px 8px 8px 5px #1d1d1d
+        
+        span
+            margin-top: 4rem
+            font-size: 2rem
+            font-weight: 600
+
+    &tracks
+        margin-left: 20%
+        margin-bottom: 2rem
+
+    &main-title
+        display: inline-block
+        text-align: center
+        width: 100%
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 2rem
+        margin-bottom: 1rem
+        
+    &track 
+        width: 100%
+        height: 4rem
+        margin-top: 1.5rem
+        background-color: #6664
+        border: 1px solid #FFF
+        border-radius: 1rem
+
+        color: #fff
+        font-size: 1.5rem
+
+        &__link-block
+            display: grid
+            padding-left: 1rem
+            grid-template-columns: 15% 85%
+            height: 100%
+            align-items: center
+            text-decoration: none
+            color: #FFF
+            border-radius: 1rem
+
+            transition: 1s
+
+            &:hover
+                background-color: #77777766
+                box-shadow:  0 0 15px 8px #525252
+
+                img
+                    height: 3.25rem
+
+        &__title
+            text-align: left
+            font-weight: 600
+            font-size: 1.5rem
+
+        &__icon
+            height: 2.75rem
+            border-radius: 0.5rem
+            transition: 1s
+
+@media (max-width: 650px) 
+    .page-artist__
+
+        &container 
+            grid-template-columns: 1fr
+        
+        &photo
+            position: static
+
+            img
+                margin-top: 0
+                border-radius: 2.5rem
+
+                box-shadow: 8px 8px 8px 1px #1d1d1d
+            
+            span
+                margin-top: 8rem
+                font-size: 6rem
+
+        &tracks
+            width: 90%
+            border-top: 1px solid #b8b8b8
+            margin: 9rem 0 0 5%
+            padding-top: 6rem
+
+        &main-title
+                text-align: center
+                font-size: 6rem
+
+        &track 
+            width: 95%
+            margin-left: 2.5%
+            height: 14rem
+            margin-top: 5rem
+            border: 0
+            box-shadow: 10px 10px 5px 5px #1d1d1d
+
+            &__link-block
+                display: grid
+                padding-left: 2rem
+                grid-template-columns: 20% 80%
+                height: 100%
+                align-items: center
+
+                &:hover
+                    background-color: #77777766
+                    box-shadow:  0 0 7px 4px #525252
+
+                    img
+                        height: 10rem
+
+            &__title
+                font-size: 5rem
+                font-weight: 500
+                text-align: left
+
+            &__icon
+                height: 10rem
+                width: 10rem
+                border-radius: 1rem
+
+            &__play
+                padding: 2rem
+            
+            &:last-child
+                margin-bottom: 10rem

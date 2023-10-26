@@ -1,0 +1,68 @@
+@keyframes back-hover
+    0% 
+        transform: translateX(0)
+    50%
+        transform: translateX(15px)
+    100%
+        transform: translateX(0)
+    
+.header__ 
+    &container
+        display: flex
+        flex-direction: row
+        backdrop-filter: blur(10px)
+        position: sticky
+        top: 0
+        z-index: 40
+        transition: 0.5s
+        
+    &sticky
+        background-color: #00000079
+        box-shadow: 0px 9px 20px 1px #000000
+
+    &block 
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+
+        &_back
+            width: 80%
+    
+    &logo 
+        padding: 1rem 0 1rem
+        height: 5rem
+
+    &back-btn
+        background-color: #0000
+        color: #FFF
+        font-weight: 600
+        border: 0
+        text-transform: uppercase
+        font-size: 1.5rem
+        width: 10%
+
+        &:hover
+            animation: back-hover 1s
+
+
+@media (max-width: 650px) 
+
+    .header__ 
+        &container 
+            
+
+        &logo 
+            padding: 6rem 0
+            height: 20rem
+
+        &block 
+            width: 100%
+            
+            &_back
+                width: 60%
+
+        &back-btn
+            font-size: 10rem
+            width: 20%
+            height: 28rem

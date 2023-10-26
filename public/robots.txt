@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+Allow: /
+Allow: *.css
+Allow: *.js
+Allow: *.ico
+Allow: *.png
+Allow: *.jpg

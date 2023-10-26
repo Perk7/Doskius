@@ -1,0 +1,96 @@
+.tracks__
+    &list
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 3rem 5rem
+
+    &item 
+        width: 80%
+        height: 5rem
+        margin-bottom: 2rem
+        background-color: #6664
+        border: 1px solid #FFF
+        border-radius: 1rem
+
+        color: #fff
+        font-size: 1.5rem
+
+        &__link-block
+            display: grid
+            padding-left: 1rem
+            grid-template-columns: 8% 32% 60%
+            height: 100%
+            align-items: center
+            text-decoration: none
+            color: #FFF
+            border-radius: 1rem
+            justify-items: start
+
+            transition: 1s
+
+            &:hover
+                background-color: #77777766
+                box-shadow:  0 0 15px 8px #525252
+                
+
+                img
+                    height: 4.2rem
+
+        &__title
+            font-weight: 600
+
+        &__icon
+            height: 3.5rem
+            border-radius: 0.5rem
+            transition: 1s
+
+        &__artists
+            color: #dadada
+
+@media (max-width: 650px) 
+    .tracks__
+
+        &item 
+            width: 100%
+            height: 18rem
+            padding: 2rem 1.5rem
+            margin-bottom: 5rem
+            border-radius: 1rem
+            text-align: left
+            border: 0
+            box-shadow: 10px 10px 10px 5px #1d1d1d
+
+            font-size: 4rem
+
+            &:hover
+                background-color: #77777766
+                box-shadow:  0 0 5px 2px #525252
+
+            &__link-block
+                grid-template-areas: "icon name" "icon artists"
+                grid-template-columns: 25% 70%
+                grid-template-rows: 30% 70%
+
+                &:hover
+                    background-color: #0000
+                    box-shadow: none
+
+                    img
+                        height: 100%
+
+            &__icon
+                grid-area: icon
+                height: 100%
+                width: 80%
+                border-radius: 1.5rem
+            
+            &__title
+                grid-area: name
+
+            &__artists
+                display: flex
+                align-items: flex-end
+                height: 100%
+                
+                grid-area: artists

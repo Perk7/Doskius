@@ -1,0 +1,163 @@
+.track__
+    &container
+        display: grid
+        grid-template-columns: 65% 35%
+        margin: 2rem 4rem 0
+    
+    &title-block
+        display: grid
+        grid-template-columns: 20% 80%
+        font-size: 3rem
+        font-weight: 600
+        align-items: center
+        justify-items: start
+
+        padding-bottom: 1rem
+
+        img
+            width: 95%
+            box-shadow: 6px 6px 8px 5px #1d1d1d
+            border-radius: 1rem
+
+        span
+            margin-left: 2rem
+
+    &player-block
+        padding: 1.5rem 0
+        border-bottom: 2px solid #b8b8b8
+        transition: 1s
+
+        audio
+            width: 100%
+
+            &::-webkit-media-controls-enclosure 
+                background-color: #0000
+
+    &text-block 
+        padding: 1rem 0
+        font-size: 1.5rem
+        text-align: left
+
+    &artists-block
+        padding-left: 4rem
+        display: flex
+        flex-direction: column
+        align-items: start
+
+    &artists-title
+            font-size: 2.5rem
+            width: 100%
+            display: inline-block
+            text-transform: uppercase
+            font-weight: 500
+            text-align: center
+            padding-bottom: 3rem
+
+    &artist-item
+        display: grid
+        grid-template-columns: 30% 70%
+        padding-left: 4%
+        box-shadow: 6px 6px 8px 5px #1d1d1d
+        height: 6rem
+        align-content: center
+        text-decoration: none
+        color: #FFF
+        width: 90%
+        margin-bottom: 2rem
+        background-color: #ccc1
+        backdrop-filter: blur(3px)
+                                      
+        align-items: center
+        transition: box-shadow 0, 1s
+        border-radius: 0.5rem
+        outline: 2px solid #FFF0
+
+        img
+            width: 4.5rem
+            border-radius: 0.5rem
+            transition: 1s
+        
+        span
+            text-align: left
+            font-size: 1.75rem
+            font-weight: 600
+        
+        &:hover
+            background-color: #ccc3
+            box-shadow: 3px 3px 8px #858585
+
+            img
+                width: 5rem
+
+    &artsist-list
+        width: 100%
+
+@media (max-width: 650px) 
+    .track__
+        &container
+            grid-template-columns: 1fr
+            margin: 2rem 4rem
+        
+        &main-block
+            order: 4
+
+        &title-block
+            grid-template-columns: 30% 70%
+            font-size: 6rem
+
+            padding: 6rem 0
+
+            img
+                box-shadow: 7px 7px 10px 5px #1d1d1d
+                border-radius: 2rem
+            
+            span
+                margin-left: 4rem
+        
+        &player-block
+            padding: 2rem 0
+            border-bottom: 1px solid #b8b8b8
+
+        &text-block 
+            font-size: 3rem
+            width: 100%
+
+        &artists-block
+            width: 100%
+            padding-bottom: 5rem
+            padding-left: 0
+
+        &artists-title
+            width: 100%
+            text-align: center
+            font-size: 6rem
+            padding-bottom: 6rem
+
+        &artsist-list
+            width: 100%
+
+        &artist-item
+            grid-template-columns: 25% 75%
+            height: 14rem
+            padding: 3% 2%
+            width: 96%
+            margin-right: 0
+            margin-bottom: 4rem
+                                        
+            border-radius: 1rem
+
+            img
+                width: 14rem
+                height: 14rem
+                border-radius: 1rem
+                
+            span
+                text-align: left
+                font-size: 4rem
+
+            &:hover
+                background-color: #ccc3
+                box-shadow:  0 0 5px 2px #525252
+
+                img
+                    width: 14rem

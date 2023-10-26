@@ -1,0 +1,86 @@
+.navblock
+    &__container 
+        padding: 4rem 0
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+
+    &__item
+        height: 28rem
+        width: 19rem
+        
+        border: 1px solid #c5c4c4
+        border-radius: 1.5rem
+        transition: 1s
+        transition: box-shadow 1.5s, transform 1s, filter 1.5s
+
+        filter: grayscale(100%) 
+
+        &__link
+            display: flex
+            height: 100%
+            width: 100%
+            align-items: flex-end
+            justify-content: center
+
+            text-decoration: none
+            color: #FFF
+            text-transform: uppercase
+            font-weight: 600
+            font-size: 2rem
+            border-radius: 1.5rem
+            box-shadow: 0 0 60px rgba(0, 0, 0, .9) inset
+
+            span
+                display: inline-block
+                background: linear-gradient(to top, #000d 25%, #000b 50%, #0000 100%)
+                padding: 4rem 0 1.5rem
+                border-radius: 1.5rem
+                width: 100%
+
+        &:first-child
+            background-image: url(../../../public/Navbar/artists.jpg)
+            background-size: cover
+        
+        &:last-child
+            background-image: url(../../../public/Navbar/tracks.jpg)
+            background-size: cover
+
+        &:hover
+            transform: scale(1.15)
+            filter: grayscale(0%) 
+            box-shadow:  0 0 20px 10px #525252
+
+
+@media (max-width: 650px) 
+
+    .navblock
+        &__container 
+            padding-top: 5rem
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+
+        &__item
+            width: 74%
+            margin-bottom: 10rem
+            height: 105rem
+
+            border: 0
+            box-shadow: 10px 10px 10px 5px #1d1d1d
+            
+            transition: 1s
+
+            filter: none
+
+            &:hover
+                transform: scale(1.05)
+                box-shadow: 5px 5px 12px 3px #525252
+
+
+            &__link
+                font-size: 8rem
+                box-shadow: 0 0 70px rgba(0, 0, 0, .9) inset
+
+                span
+                    padding: 15rem 0 10rem
