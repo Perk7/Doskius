@@ -15,7 +15,7 @@ export default function PageTrack() {
     <section className="track__container">
         <div className="track__main-block">
             <div className="track__title-block">
-                <img src={`../Tracks/${object.icon}`} alt="" className="track__icon" />
+                <img src={`../Tracks/${object.icon}`} alt={`Track ${object.name} icon`} className="track__icon" />
                 <span>{object.title}</span>
             </div>
             <div className="track__player-block">
@@ -30,7 +30,7 @@ export default function PageTrack() {
             <div className="track__artsist-list">
                 {object.artists.map(e => 
                     <Link to={`/artist/${e}`} className="track__artist-item" key={e}>
-                        <img src={`../Artists/${artists[e].avatar}_sm.jpeg`} alt="" />
+                        <img src={`../Artists/${artists[e].avatar}_sm.jpeg`} alt={`Aritst ${artists[e].name} avatar`} />
                         <span>{artists[e].name}</span>
                     </Link>    
                 )}

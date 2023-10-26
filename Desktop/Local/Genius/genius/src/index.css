@@ -3,6 +3,10 @@ html {
   font-size: 1vw;
 }
 
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 html::-webkit-scrollbar {
   display: none;
 }

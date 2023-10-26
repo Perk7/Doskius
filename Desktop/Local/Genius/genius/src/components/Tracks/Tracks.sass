@@ -24,65 +24,73 @@
             align-items: center
             text-decoration: none
             color: #FFF
-            border-top-left-radius: 1rem
-            border-bottom-left-radius: 1rem
+            border-radius: 1rem
             justify-items: start
 
             transition: 1s
 
             &:hover
-                background-color: #6666
+                background-color: #77777766
+                box-shadow:  0 0 15px 8px #525252
+                
+
+                img
+                    height: 4.2rem
 
         &__title
             font-weight: 600
 
         &__icon
             height: 3.5rem
-            width: 3.5rem
             border-radius: 0.5rem
-
-        &__play-block
-            width: 100%
-            height: 100%
-            display: flex
-            border-left: 3px solid #FFF
-            border-top-right-radius: 1rem
-            border-bottom-right-radius: 1rem
-            align-items: center
-            justify-content: center
             transition: 1s
 
-            &:hover
-                background-color: #6666
-
-        &__play
-            padding: 1rem
-            border: 0
-            background-color: #FFF0
-            background-size: cover
-            background-image: url(../../../public/icons/play.svg)
+        &__artists
+            color: #dadada
 
 @media (max-width: 650px) 
     .tracks__
 
         &item 
             width: 100%
-            height: 10rem
+            height: 18rem
+            padding: 2rem 1.5rem
             margin-bottom: 5rem
             border-radius: 1rem
             text-align: left
+            border: 0
+            box-shadow: 10px 10px 10px 5px #1d1d1d
 
-            font-size: 3rem
+            font-size: 4rem
+
+            &:hover
+                background-color: #77777766
+                box-shadow:  0 0 5px 2px #525252
 
             &__link-block
-                grid-template-columns: 10% 30% 60%
+                grid-template-areas: "icon name" "icon artists"
+                grid-template-columns: 25% 70%
+                grid-template-rows: 30% 70%
+
+                &:hover
+                    background-color: #0000
+                    box-shadow: none
+
+                    img
+                        height: 100%
+
             &__icon
-                height: 7rem
-                width: 7rem
+                grid-area: icon
+                height: 100%
+                width: 80%
                 border-radius: 1.5rem
+            
+            &__title
+                grid-area: name
 
-            &__play-block
-                border-left: 2px solid #FFF
-
-            &__play
-                padding: 2rem
+            &__artists
+                display: flex
+                align-items: flex-end
+                height: 100%
+                
+                grid-area: artists

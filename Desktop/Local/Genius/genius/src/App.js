@@ -1,7 +1,10 @@
 import {
   Route,
-  Routes
+  Routes,
+  useLocation
 } from "react-router-dom";
+
+import { useEffect } from "react";
 
 import MainMenu from "./components/MainMenu/MainMenu";
 import Artists from "./components/Artists/Artists";
@@ -11,6 +14,12 @@ import PageTrack from "./components/PageTrack/PageTrack";
 import './App.css';
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="App">
       <Routes>

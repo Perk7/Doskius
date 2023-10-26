@@ -1,20 +1,17 @@
 {
   "files": {
-    "main.css": "/Doskius/static/css/main.550bafbd.css",
-    "main.js": "/Doskius/static/js/main.1ab279d0.js",
+    "main.css": "/Doskius/static/css/main.243bba46.css",
+    "main.js": "/Doskius/static/js/main.0591dec0.js",
     "static/js/787.869de754.chunk.js": "/Doskius/static/js/787.869de754.chunk.js",
-    "static/media/mic.png": "/Doskius/static/media/mic.010a14f23dd97ae033f2.png",
-    "static/media/notea.png": "/Doskius/static/media/notea.6fa3ebc45b3e42136f34.png",
-    "static/media/tracks.jpg": "/Doskius/static/media/tracks.1d211e97b79595e5a217.jpg",
-    "static/media/artists.jpg": "/Doskius/static/media/artists.9b4f56deacfbab35330e.jpg",
-    "static/media/play.svg": "/Doskius/static/media/play.6247b2fc73279469beae.svg",
+    "static/media/tracks.jpg": "/Doskius/static/media/tracks.48f2d5e7dc8add40ebdb.jpg",
+    "static/media/artists.jpg": "/Doskius/static/media/artists.b43a76b01529dd2f0537.jpg",
     "index.html": "/Doskius/index.html",
-    "main.550bafbd.css.map": "/Doskius/static/css/main.550bafbd.css.map",
-    "main.1ab279d0.js.map": "/Doskius/static/js/main.1ab279d0.js.map",
+    "main.243bba46.css.map": "/Doskius/static/css/main.243bba46.css.map",
+    "main.0591dec0.js.map": "/Doskius/static/js/main.0591dec0.js.map",
     "787.869de754.chunk.js.map": "/Doskius/static/js/787.869de754.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.550bafbd.css",
-    "static/js/main.1ab279d0.js"
+    "static/css/main.243bba46.css",
+    "static/js/main.0591dec0.js"
   ]
 }

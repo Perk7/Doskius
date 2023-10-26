@@ -2,18 +2,22 @@
 
     &container 
         display: grid
-        grid-template-columns: 40% 60%
+        grid-template-columns: 40% 40%
+
     
     &photo
         display: flex
         flex-direction: column
         align-items: center
+        margin-top: 5rem
+        position: sticky
+        top: 40rem
 
         img
             width: 40%
             border-radius: 1rem
 
-            box-shadow: 0px 0px 20px 5px #c2c2c2
+            box-shadow: 8px 8px 8px 5px #1d1d1d
         
         span
             margin-top: 4rem
@@ -21,15 +25,20 @@
             font-weight: 600
 
     &tracks
+        margin-left: 20%
+        margin-bottom: 2rem
 
     &main-title
         display: inline-block
+        text-align: center
         width: 100%
-        text-align: left
+        text-transform: uppercase
+        font-weight: 600
         font-size: 2rem
+        margin-bottom: 1rem
         
     &track 
-        width: 50%
+        width: 100%
         height: 4rem
         margin-top: 1.5rem
         background-color: #6664
@@ -47,13 +56,16 @@
             align-items: center
             text-decoration: none
             color: #FFF
-            border-top-left-radius: 1rem
-            border-bottom-left-radius: 1rem
+            border-radius: 1rem
 
             transition: 1s
 
             &:hover
-                background-color: #6666
+                background-color: #77777766
+                box-shadow:  0 0 15px 8px #525252
+
+                img
+                    height: 3.25rem
 
         &__title
             text-align: left
@@ -61,31 +73,9 @@
             font-size: 1.5rem
 
         &__icon
-            height: 3rem
-            width: 3rem
+            height: 2.75rem
             border-radius: 0.5rem
-
-        &__play-block
-            width: 100%
-            height: 100%
-            display: flex
-            border-left: 1px solid #FFF
-            border-top-right-radius: 1rem
-            border-bottom-right-radius: 1rem
-            align-items: center
-            justify-content: center
-            
             transition: 1s
-
-            &:hover
-                background-color: #6666
-
-        &__play
-            padding: 0.8rem
-            border: 0
-            background-color: #FFF0
-            background-size: cover
-            background-image: url(../../../public/icons/play.svg)
 
 @media (max-width: 650px) 
     .page-artist__
@@ -94,31 +84,35 @@
             grid-template-columns: 1fr
         
         &photo
+            position: static
 
             img
-                margin-top: 10rem
+                margin-top: 0
                 border-radius: 2.5rem
 
-                box-shadow: 0px 0px 10px 3px #c2c2c2
+                box-shadow: 8px 8px 8px 1px #1d1d1d
             
             span
                 margin-top: 8rem
                 font-size: 6rem
 
         &tracks
-            border-top: 2px solid #FFF
-            margin-top: 6rem
+            width: 90%
+            border-top: 1px solid #b8b8b8
+            margin: 9rem 0 0 5%
             padding-top: 6rem
 
         &main-title
                 text-align: center
                 font-size: 6rem
-            
+
         &track 
             width: 95%
             margin-left: 2.5%
             height: 14rem
             margin-top: 5rem
+            border: 0
+            box-shadow: 10px 10px 5px 5px #1d1d1d
 
             &__link-block
                 display: grid
@@ -128,7 +122,11 @@
                 align-items: center
 
                 &:hover
-                    background-color: #6666
+                    background-color: #77777766
+                    box-shadow:  0 0 7px 4px #525252
+
+                    img
+                        height: 10rem
 
             &__title
                 font-size: 5rem

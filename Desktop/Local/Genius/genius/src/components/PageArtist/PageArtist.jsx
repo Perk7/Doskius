@@ -13,7 +13,7 @@ export default function PageArtist() {
     <Header back />
     <section className="page-artist__container">
         <div className="page-artist__photo">
-            <img src={`../Artists/${object.avatar}.jpeg`} alt="" />
+            <img src={`../Artists/${object.avatar}.jpeg`} alt={`Avatar ${object.name}`} />
             <span>{object.name}</span>
         </div>
         <div className="page-artist__tracks">
@@ -21,7 +21,7 @@ export default function PageArtist() {
             {getTracks(object.tracks).map(e => 
                 <div className='page-artist__track' key={e}>
                     <Link className='page-artist__track__link-block' to={`/track/${e}`}>
-                        <img src={`../Tracks/${tracks[e].icon}`} alt="" className="page-artist__track__icon" />
+                        <img src={`../Tracks/${tracks[e].icon}`} alt={`Track ${tracks[e].name} icon`} className="page-artist__track__icon" />
                         <span className="page-artist__track__title">{tracks[e].title}</span>
                     </Link>
                 </div>
