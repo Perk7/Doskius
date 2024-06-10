@@ -28,7 +28,7 @@ export default function Artists() {
         {Object.keys(artists).map(id =>
         <div className="artist__item" onMouseMove={ev => fluid(ev)} onMouseOver={ev => interact(ev) } onMouseLeave={ev => leave(ev) }>
           <Link to={`/artist/${id}`} className="artists__item__link" key={id}>
-              <img src={`/Doskius/Artists/${artists[id].avatar}.jpeg`} alt={`Avatar ${artists[id].name}`} />
+              <img src={`/Doskius/Artists/${artists[id].avatar}.jpg`} alt={`Avatar ${artists[id].name}`} />
               <span>{artists[id].name}</span>
           </Link>
         </div>

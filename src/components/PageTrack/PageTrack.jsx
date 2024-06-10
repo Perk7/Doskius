@@ -30,7 +30,7 @@ export default function PageTrack() {
             <div className="track__artsist-list">
                 {object.artists.map(e => 
                     <Link to={`/artist/${e}`} className="track__artist-item" key={e}>
-                        <img src={`../Artists/${artists[e].avatar}_sm.jpeg`} alt={`Aritst ${artists[e].name} avatar`} />
+                        <img src={`../Artists/${artists[e].avatar}_sm.jpg`} alt={`Aritst ${artists[e].name} avatar`} />
                         <span>{artists[e].name}</span>
                     </Link>    
                 )}

@@ -13,7 +13,7 @@ export default function PageArtist() {
     <Header back />
     <section className="page-artist__container">
         <div className="page-artist__photo">
-            <img src={`../Artists/${object.avatar}.jpeg`} alt={`Avatar ${object.name}`} />
+            <img src={`../Artists/${object.avatar}.jpg`} alt={`Avatar ${object.name}`} />
             <span>{object.name}</span>
         </div>
         <div className="page-artist__tracks">
